@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaldSchool - Обучение Python</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ChaldSchool</div>
+            <ul class="menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#lessons">Уроки</a></li>
+                <li><a href="#tasks">Задания</a></li>
+                <li><a href="#login">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Добро пожаловать в ChaldSchool</h1>
+            <p>Изучайте Python с интерактивными уроками и заданиями!</p>
+            <a href="#lessons" class="btn">Начать обучение</a>
+        </section>
+
+        <section id="lessons">
+            <h2>Уроки</h2>
+            <p>Пройдите наши уроки, чтобы изучить основы Python.</p>
+            <div class="lessons-list">
+                <div class="lesson">
+                    <h3>Урок 1: Введение</h3>
+                    <p>Познакомьтесь с основами Python: переменные, типы данных и синтаксис.</p>
+                    <a href="#" class="btn">Начать</a>
+                </div>
+                <div class="lesson">
+                    <h3>Урок 2: Условные операторы</h3>
+                    <p>Узнайте, как использовать if-else и работать с логикой.</p>
+                    <a href="#" class="btn">Начать</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="tasks">
+            <h2>Задания</h2>
+            <p>Проверьте свои знания с помощью интерактивных заданий.</p>
+            <div class="tasks-list">
+                <div class="task">
+                    <h3>Задание 1</h3>
+                    <p>Напишите программу, которая складывает два числа.</p>
+                    <a href="#" class="btn">Решить</a>
+                </div>
+                <div class="task">
+                    <h3>Задание 2</h3>
+                    <p>Создайте цикл, который считает от 1 до 10.</p>
+                    <a href="#" class="btn">Решить</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="login">
+            <h2>Авторизация</h2>
+            <form action="/login" method="post">
+                <label for="username">Имя пользователя</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="btn">Войти</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 ChaldSchool. Все права защищены.</p>
+    </footer>
+</body>
+</html>
