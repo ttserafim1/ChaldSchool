@@ -1,79 +1,100 @@
-/* Основные стили */
+/* Общие стили для всего сайта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5fafd;
+    background-color: #f2f8f9;  /* Светлый фон для всей страницы */
     color: #333;
-}
-
-header {
-    background-color: #00bcd4;
-    color: white;
-    padding: 15px 20px;
-}
-
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-header .menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
     display: flex;
-    gap: 20px;
-}
-
-header .menu li {
-    display: inline;
-}
-
-header .menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     padding: 20px;
 }
 
-section {
-    margin-bottom: 40px;
+h1, h2, h3 {
+    color: #009e9f; /* Бирюзовый цвет для заголовков */
 }
 
-h1, h2 {
-    color: #00bcd4;
+/* Стили для контейнера страницы */
+.container {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #00bcd4;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #009e9f;
 }
 
-.btn:hover {
-    background-color: #008ba3;
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
-.lessons-list, .tasks-list {
+/* Стили для форм */
+form {
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
-.lesson, .task {
+input[type="text"], input[type="password"] {
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 6px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    background-color: white;
-    width: calc(50% - 20px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #009e9f;
+}
+
+button {
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #009e9f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007f7f;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Анимации для плавности */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
